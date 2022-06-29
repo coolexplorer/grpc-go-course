@@ -14,11 +14,14 @@ jobs:
     steps:
     - uses: actions/checkout@v3
 
-    - name: Install dependencies
-      run: make
+    - name: Install Protoc
+      uses: arduino/setup-protoc@v1
 
-    - name: Run clean
-      run: make clean
+    - name: Install dependencies
+      run: make dep
 
     - name: Run greet
       run: make greet
+
+    - name: Run clean
+      run: make clean
