@@ -74,6 +74,8 @@ clean_blog: ## Clean generated files for blog
 rebuild: clean all ## Rebuild the whole project
 
 deps:
+	go install google.golang.org/protobuf/cmd/protoc-gen-go@v1.28
+	go install google.golang.org/grpc/cmd/protoc-gen-go-grpc@v1.2
 	go mod tidy
 
 about: ## Display info related to the build
