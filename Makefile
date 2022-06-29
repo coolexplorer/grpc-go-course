@@ -73,8 +73,8 @@ clean_blog: ## Clean generated files for blog
 
 rebuild: clean all ## Rebuild the whole project
 
-dep:
-	go mod download
+deps:
+	go mod tidy
 
 about: ## Display info related to the build
 	@echo "OS: ${OS}"

@@ -18,8 +18,11 @@ jobs:
     - name: Install Protoc
       uses: arduino/setup-protoc@v1
 
+    - name: Install Protoc
+      uses: arduino/setup-protoc@v1
+
     - name: Install dependencies
-      run: make dep
+      run: make deps
 
     - name: Run greet
       run: make greet
