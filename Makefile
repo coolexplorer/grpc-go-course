@@ -37,14 +37,15 @@ else
 endif
 
 .DEFAULT_GOAL := help
-.PHONY: greet blog calculator help
-project := greet calculator blog
+.PHONY: greet blog calculator calculator help
+project := greet calculator blog calculator
 
 all: $(project) ## Generate Pbs and build
 
 greet: $@ ## Generate Pbs and build for greet
 calculator: $@ ## Generate Pbs and build for calculator
 blog: $@ ## Generate Pbs and build for blog
+calculator: $@ ## Generate Pbs and build for calculator
 
 $(project):
 	@${CHECK_DIR_CMD}
