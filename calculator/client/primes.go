@@ -8,7 +8,7 @@ import (
 	pb "github.com/coolexplorer/grpc-go-course/calculator/proto"
 )
 
-func doPrimes(c pb.CalculatorServiceClient, num int32) {
+func doPrimes(c pb.CalculatorServiceClient, num int64) {
 	log.Println("doPrimes was invoked.")
 
 	req := &pb.PrimeRequest{
