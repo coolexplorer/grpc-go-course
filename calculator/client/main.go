@@ -23,5 +23,5 @@ func main() {
 	c := pb.NewCalculatorServiceClient(conn)
 
 	doSum(c, 10, 20)
-	doPrimes(c, 100)
+	doPrimes(c, 6195196420)
 }
