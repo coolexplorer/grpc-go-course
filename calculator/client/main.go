@@ -25,5 +25,7 @@ func main() {
 	//doSum(c, 10, 20)
 	//doPrimes(c, 6195196420)
 
-	doAvg(c)
+	//doAvg(c)
+	doSqrt(c, 10)
+	doSqrt(c, -2)
 }
